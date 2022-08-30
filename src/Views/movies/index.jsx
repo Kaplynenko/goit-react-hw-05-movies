@@ -7,7 +7,7 @@ import Searchbar from 'components/SearhBar';
 export default function Movie() {
   const location = useLocation();
   const queryParam = new URLSearchParams(location.search);
-  console.log(location);
+  
   const [movie, setMovie] = useState(queryParam.get('search') ?? '');
   const [moviesGallary, setMoviesGallary] = useState([]);
 
